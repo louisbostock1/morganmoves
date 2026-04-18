@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MorganMovesPT — Tagline Here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════ -->
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="#" class="nav-logo">
+        <!-- Swap .logo-placeholder for <img> when ready -->
+        <div class="logo-placeholder">MR</div>
+        <span class="nav-wordmark">MorganMoves</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="">Coaching</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Videos</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <a href="#contact" class="btn btn-primary nav-cta">Get in Touch</a>
+
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light/dark mode">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+
+        <!-- Hamburger: hidden desktop, shown mobile via media query -->
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"
+          style="display:none">
+          <svg class="icon-menu" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+          <svg class="icon-close" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" style="display:none">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════
+       MOBILE MENU PANEL
+  ══════════════════════════════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="">Coaching</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Videos</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-cta">
+      <a href="#contact" class="btn btn-primary mobile-link">Get in Touch →</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="tag">Personal Training</span>
+        <h1>Train<br><span>Better</span><br>Feel Better</h1>
+        <p class="hero-sub">I help people to love life, not just live it - by promoting body positivity and overall wellbeing.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Contact Me →</a>
+          <a href="#services" class="btn btn-ghost">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-img-wrap"><img src="images/gym1.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       STATS BAR
+  ══════════════════════════════════════════════ -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div><span class="stat-num">120+</span><span class="stat-label">Stat / Metric</span></div>
+        <div><span class="stat-num">98%</span><span class="stat-label">Stat / Metric</span></div>
+        <div><span class="stat-num">5★</span><span class="stat-label">Stat / Metric</span></div>
+        <div><span class="stat-num">10yr</span><span class="stat-label">Stat / Metric</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════════ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">What I can do for You</span>
+        <h2>Services &amp; Offerings</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg></div>
+          <h3>Personalised plans</h3>
+          <p>Plans adapted to your fitness goals and needs, supporting you every step of the way.</p>
+        </div>
+        <div class="card reveal" style="transition-delay:.08s">
+          <div class="card-icon"><svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg></div>
+          <h3>Adaptable schedules</h3>
+          <p>I can fit to your schedule so you don't miss a single workout. If life gets in the way, we can adapt to that. </p>
+        </div>
+        <div class="card reveal" style="transition-delay:.16s">
+          <div class="card-icon"><svg viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg></div>
+          <h3>Consistent monitoring</h3>
+          <p>Together we can regularly check in on your health and make sensible choices to benefit you.</p>
+        </div>
+        <div class="card reveal" style="transition-delay:.24s">
+          <div class="card-icon"><svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg></div>
+          <h3>Fitness community</h3>
+          <p>A community of likeminded people around you for support, every step of the way. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       ABOUT / SPLIT
+  ══════════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="split">
+        <div class="split-img reveal"><img src="images/gym2.jpg" alt=""></div>
+        <div class="split-copy reveal" style="transition-delay:.12s">
+          <span class="tag">About</span>
+          <h2>A Bit About Who I Am</h2>
+          <p>I started personal training because I want... , add more content for your clients to read,</p>
+          <ul class="checklist">
+            <li>Currently training to be a level 3 PT</li>
+            <li>Holds a degree in sports coaching from MMU</li>
+            <li>Keen runner and gym go-er since 15 years old</li>
+            <li>Studied sports science all throughout school and college</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Workout With Me →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       MID-PAGE CTA BAND
+  ══════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <span class="tag">Ready?</span>
+        <h2>Ready to Get Started on Your Fitness Journey?</h2>
+        <p>Book a consultation with me now, and we can decide what works best for your fitness goals.
+        </p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary">Book a Consultation →</a>
+          <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════════ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Read Reviews</span>
+        <h2>What My Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial reveal">
+          <p class="testimonial-quote">Placeholder testimonial. Replace with a genuine review that speaks to results and
+            experience. Specific beats vague every time.</p>
+          <div class="testimonial-author">
+            <div class="avatar"></div>
+            <div>
+              <div class="author-name">Client Name</div>
+              <div class="author-role">Role / Company</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal" style="transition-delay:.08s">
+          <p class="testimonial-quote">Placeholder testimonial. Replace with a genuine review that speaks to results and
+            experience. Specific beats vague every time.</p>
+          <div class="testimonial-author">
+            <div class="avatar"></div>
+            <div>
+              <div class="author-name">Client Name</div>
+              <div class="author-role">Role / Company</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal" style="transition-delay:.16s">
+          <p class="testimonial-quote">Placeholder testimonial. Replace with a genuine review that speaks to results and
+            experience. Specific beats vague every time.</p>
+          <div class="testimonial-author">
+            <div class="avatar"></div>
+            <div>
+              <div class="author-name">Client Name</div>
+              <div class="author-role">Role / Company</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       CONTACT / ENQUIRY FORM
+  ══════════════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <span class="tag">Get in Touch</span>
+          <h2>Let's Talk</h2>
+          <p>Fill in the form and I'll be in touch shortly. Or reach out directly using my details shown below.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              morgan@email.com
+            </div>
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.29 6.29l1.88-1.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+              </svg>
+              +44 0000 000 000
+            </div>
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              City, Country
+            </div>
+          </div>
+        </div>
+
+        <div class="form reveal" style="transition-delay:.12s">
+          <div class="form-row">
+            <div class="field">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Jane" />
+            </div>
+            <div class="field">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Smith" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@example.com" />
+          </div>
+          <!-- CUSTOMISABLE: swap options per client -->
+          <div class="field">
+            <label for="service">I'm interested in…</label>
+            <select id="service">
+              <option value="" disabled selected>Select a service</option>
+              <option>Improving Sport</option>
+              <option>Building Muscle</option>
+              <option>Losing Weight</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" placeholder="Tell us a bit about what you're looking for…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 Morgan Moves. All rights reserved.</span>
+      <nav class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
